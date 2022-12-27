@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "snowflake"
+version = "0.1.0"
+description = "Snowflake Snowpark for Python"
+authors = ["sebastian hansen <sebastian.hansen@dataalchemy.dev>"]
+license = "Apache License, Version 2.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cloudpickle = ">=1.6.0,<=2.0.0"
+snowflake-connector-python = "^2.9.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+coverage = "^7.0.1"
+sphinx = "5.0.2"
+cachetools = "^5.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
